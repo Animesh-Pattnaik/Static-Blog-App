@@ -5,17 +5,13 @@ and Markdown files for content management.
 ## Setup and Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/blog-site.git
+   git clone https://github.com/Animesh-Pattnaik/static-blog-app.git
 2. cd blog-site
 3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

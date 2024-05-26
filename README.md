@@ -1,9 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog Site
+This is a blog site that I created using Next.js that leverages `getStaticProps` for static generation
+and Markdown files for content management.
 
-## Getting Started
-
-First, run the development server:
-
+## Setup and Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/blog-site.git
+2. cd blog-site
+3. Run the development server:
 ```bash
 npm run dev
 # or
@@ -13,12 +17,34 @@ pnpm dev
 # or
 bun dev
 ```
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
+1. `content/posts`: Directory containing Markdown files for blog posts.
+2. `components`: Directory containing reusable components (Layout.js, BlogList.js, BlogPost.js, SearchBar.js).
+3. `pages`: Next.js pages (index.js for homepage, [slug].js for individual blog posts).
+4. `styles`: Global CSS for styling.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Key Components
+1. `layout.js`: Layout component for consistent page structure.
+2. `BlogList.js`: Component to display a list of blog post summaries.
+3. `BlogPost.js`: Component to display individual blog post content.
+4. `SearchBar.js`: Component to handle search functionality.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Static Generation
+1. `getStaticProps`: Fetches blog posts from Markdown files at build time.
+2. `getStaticPaths`: Generates paths for individual blog posts based on filenames.
+
+## Deploy on Vercel
+Deploy the project on platforms like Vercel or Netlify. 
+
+On Vercel:
+1. Push your code to a GitHub repository.
+2. Log in to Vercel and create a new project.
+3. Import your GitHub repository.
+4. Follow the prompts to deploy your site.
+
+You now have a blog site with search functionality, enabling users to filter blog posts by their search terms.
 
 ## Learn More
 
@@ -28,9 +54,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

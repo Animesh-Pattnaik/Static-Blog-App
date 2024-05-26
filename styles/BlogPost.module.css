@@ -1,0 +1,26 @@
+.blogPost {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blogPost h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.blogPost .meta {
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.blogPost .content {
+  line-height: 1.6;
+}
+
+.blogPost .content h2 {
+  color: #333;
+  margin-top: 1.5rem;
+}
